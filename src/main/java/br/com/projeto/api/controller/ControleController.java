@@ -1,4 +1,4 @@
-package br.com.projeto.api;
+package br.com.projeto.api.controller;
 
 import br.com.projeto.api.model.Pessoa;
 import org.springframework.web.bind.annotation.GetMapping;
