@@ -40,4 +40,8 @@ public class ControleController {
     public Pessoa pessoa(@RequestBody Pessoa p){
         return p;
     }
+    @GetMapping("/pessoa/contador")
+    public long contador(){
+        return acao.count();
+    }
 }
