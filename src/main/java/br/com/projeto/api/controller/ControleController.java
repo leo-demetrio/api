@@ -26,6 +26,11 @@ public class ControleController {
     public Pessoa cadastrar(@RequestBody Pessoa p){
         return acao.save(p);
     }
+    @DeleteMapping("/pessoa/delete/{id}")
+    public void remover(@PathVariable int id){
+        Pessoa p = acao.findByCodigo(id);
+        acao.delete(p);
+    }
     @PutMapping("/pessoa")
     public Pessoa update(@RequestBody Pessoa p){
         return acao.save(p);
