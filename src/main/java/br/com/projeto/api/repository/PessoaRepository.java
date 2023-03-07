@@ -14,4 +14,5 @@ public interface PessoaRepository extends CrudRepository<Pessoa, Integer> {
     List<Pessoa> findByOrderByNomeAsc();
 
     List<Pessoa> findByNomeOrderByIdadeDesc(String n);
+    List<Pessoa> findByNomeContaining(String n);
 }
