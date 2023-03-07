@@ -48,4 +48,8 @@ public class ControleController {
     public List<Pessoa> ordenaNomes(){
         return acao.findByOrderByNomeAsc();
     }
+    @GetMapping("/pessoa/filtra/ordenada")
+    public List<Pessoa> filtraOrdenaIdade(){
+        return acao.findByNomeOrderByIdadeDesc("Leo");
+    }
 }
