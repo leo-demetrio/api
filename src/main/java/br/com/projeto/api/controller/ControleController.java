@@ -44,4 +44,8 @@ public class ControleController {
     public long contador(){
         return acao.count();
     }
+    @GetMapping("/pessoa/ordenada")
+    public List<Pessoa> ordenaNomes(){
+        return acao.findByOrderByNomeAsc();
+    }
 }

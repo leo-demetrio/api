@@ -11,5 +11,5 @@ public interface PessoaRepository extends CrudRepository<Pessoa, Integer> {
 
     List<Pessoa> findAll();
     Pessoa findByCodigo(int codigo);
-
+    List<Pessoa> findByOrderByNomeAsc();
 }
